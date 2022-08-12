@@ -5,11 +5,17 @@
   "repository": "https://github.com/jeanffc/wddm-121-jamstack.git",
   "author": "Jean Fellipe Ferraz Campos <jeanffc@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development postcss src/scss/tailwind.scss --o public/tailwind.css && eleventy --serve",
+    "build": "ELEVENTY_ENV=production eleventy && NODE_ENV=production postcss src/scss/tailwind.scss --o public/tailwind.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-img": "^2.0.1",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "tailwindcss": "^3.1.8"
   }
 }

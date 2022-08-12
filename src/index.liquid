@@ -7,7 +7,7 @@ layout: main
 Posts
 {% assign posts = collections.posts | reverse %}
 {% for post in posts %}
-    <p>
-    <a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i>
-    </p>
+<p>
+	<a href="{{ post.url }}">{{ post.data.title }}</a> <i>(written {{ post.date | date: "%b %d, %Y"}})</i>
+</p>
 {% endfor %}

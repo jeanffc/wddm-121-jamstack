@@ -1,0 +1,15 @@
+{
+  "name": "wddm-121-jamstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jeanffc/wddm-121-jamstack.git",
+  "author": "Jean Fellipe Ferraz Campos <jeanffc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-img": "^2.0.1",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}

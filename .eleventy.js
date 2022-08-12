@@ -5,7 +5,7 @@ async function imageShortcode(src, alt, sizes) {
 		widths: [150, 300, null],
 		formats: ["avif", "png", "svg"],
 		urlPath: "/images/",
-		outputDir: "./public/images",
+		outputDir: "./_site/images",
 	});
 
 	let imageAttributes = {
@@ -43,7 +43,6 @@ module.exports = function (config) {
 	return {
 		dir: {
 			input: "src",
-			output: 'public',
 		},
 	};
 };
